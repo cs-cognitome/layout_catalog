@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-family: "Roboto", sans-serif; }
 
@@ -27,6 +26,11 @@ p {
     height: 40px;
     padding: 10px 0 10px 50px; }
 
+h1 {
+  visibility: hidden;
+  height: 0;
+  width: 0; }
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,14 +48,13 @@ p {
   color: #00acdc;
   margin-left: 0; }
 
-/* доработать */
 .is-active::after {
   content: "";
   position: absolute;
   background-color: #00acdc;
   left: 0;
   right: 0;
-  bottom: 4px;
+  bottom: 0;
   height: 4px;
   border-radius: 2px; }
 

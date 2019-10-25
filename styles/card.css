@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-family: "Roboto", sans-serif; }
 
@@ -42,7 +41,7 @@ p {
           box-sizing: border-box;
   border-radius: 5px;
   padding: 30px 14px 15px;
-  margin-bottom: 50px; }
+  margin-bottom: 48px; }
   .card__block-image {
     padding: 0 5px;
     padding-bottom: 45px; }
@@ -71,37 +70,53 @@ p {
   font-weight: normal;
   font-size: 11px;
   color: #000;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 15px;
-  margin-bottom: 21px; }
+  margin-bottom: 20px; }
 
-.card__stars-block {
-  width: 91px;
+.stars {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: flex; }
+  .stars:last-child {
+    margin-right: 0; }
+  .stars div:nth-child(-n + 5) {
+    width: 15px;
+    height: 15px;
+    background: url("../images/star.svg") no-repeat; }
 
-.card__stars-active {
+.stars__star {
+  margin-right: 5px; }
+
+.stars-1 > div:nth-child(-n + 1) {
   width: 15px;
   height: 15px;
   background: url("../images/star-active.svg") no-repeat; }
 
-.сard__stars-non-active {
+.stars-2 > div:nth-child(-n + 2) {
   width: 15px;
   height: 15px;
-  background: url("../images/star.svg") no-repeat; }
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars-3 > div:nth-child(-n + 3) {
+  width: 15px;
+  height: 15px;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars-4 > div:nth-child(-n + 4) {
+  width: 15px;
+  height: 15px;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars-5 > div:nth-child(-n + 5) {
+  width: 15px;
+  height: 15px;
+  background: url("../images/star-active.svg") no-repeat; }
 
 .card__value {
   font-style: normal;
@@ -149,7 +164,7 @@ p {
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 21px; }
+  margin-top: 20px; }
 
 .button:hover {
   background-color: #fff;
