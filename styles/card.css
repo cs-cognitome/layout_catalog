@@ -25,7 +25,7 @@ p {
   margin: 0 auto;
   padding: 0 40px; }
 
-.card__block {
+.card-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,43 +41,40 @@ p {
           box-sizing: border-box;
   border-radius: 5px;
   padding: 30px 14px 15px;
-  margin-bottom: 48px; }
-  .card__block-image {
+  margin-bottom: 50px; }
+  .card-block__image {
     padding: 0 5px;
     padding-bottom: 45px; }
-  .card__block-photo {
+  .card-block__photo {
     width: 160px;
     height: 134px; }
-
-.card__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  color: #000;
-  font-weight: 500;
-  line-height: 15px;
-  font-size: 12px; }
-
-.card__code {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  color: #000;
-  margin-top: 5px; }
-
-.card__rating {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 20px; }
+  .card-block__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #000;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 12px; }
+  .card-block__code {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #000;
+    margin-top: 5px; }
+  .card-block__rating {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px; }
 
 .stars {
   display: -webkit-box;
@@ -91,7 +88,7 @@ p {
     background: url("../images/star.svg") no-repeat; }
 
 .stars__star {
-  margin-right: 5px; }
+  margin-right: 4px; }
 
 .stars-1 > div:nth-child(-n + 1) {
   width: 15px;
@@ -118,7 +115,7 @@ p {
   height: 15px;
   background: url("../images/star-active.svg") no-repeat; }
 
-.card__value {
+.card-block__value {
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -133,11 +130,11 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
-  .card__value-price {
+  .card-block__value-price {
     display: inline-block;
     text-align: center;
     line-height: 13px; }
-  .card__value-sum {
+  .card-block__value-sum {
     display: inline-block;
     font-weight: bold;
     font-size: 16px; }

@@ -41,22 +41,22 @@ h1 {
     font-weight: 500;
     color: #000;
     margin-left: 20px;
-    line-height: 60px; }
+    line-height: 60px;
+    text-transform: uppercase; }
 
 .is-active {
   position: relative;
   color: #00acdc;
   margin-left: 0; }
-
-.is-active::after {
-  content: "";
-  position: absolute;
-  background-color: #00acdc;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  border-radius: 2px; }
+  .is-active::after {
+    content: "";
+    position: absolute;
+    background-color: #00acdc;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    border-radius: 2px; }
 
 .navigation__link:hover {
   color: #00acdc; }
