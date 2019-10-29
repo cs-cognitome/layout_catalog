@@ -86,19 +86,10 @@ p {
   margin: 0; }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 40px; }
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  place-content: center;
+  grid-column-gap: 48px; }
 
 .card-block {
   display: -webkit-box;
